@@ -1,0 +1,14 @@
+{
+  "type": "directory",
+  "name": "docs",
+  "contents": [
+    {
+      "type": "file",
+      "name": "LICENSE"
+    },
+    {
+      "type": "file",
+      "name": "README.md"
+    }
+  ]
+}
