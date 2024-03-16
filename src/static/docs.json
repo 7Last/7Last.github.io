@@ -1,14 +1,39 @@
 {
   "type": "directory",
   "name": "docs",
+  "size": "42K",
   "contents": [
     {
       "type": "file",
-      "name": "LICENSE"
+      "name": "LICENSE",
+      "size": "34K"
     },
     {
       "type": "file",
-      "name": "README.md"
+      "name": "README.md",
+      "size": "6"
+    },
+    {
+      "type": "directory",
+      "name": "test_folder",
+      "size": "4.0K",
+      "contents": [
+        {
+          "type": "file",
+          "name": "a",
+          "size": "0"
+        },
+        {
+          "type": "file",
+          "name": "b",
+          "size": "0"
+        },
+        {
+          "type": "file",
+          "name": "test",
+          "size": "0"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,16 @@
+:root {
+    --background-color: #e9f2ff;
+    --border-radius: 1em;
+}
+
+.container {
+    background-color: var(--background-color);
+    padding: 1em;
+    margin: 1em;
+    border-radius: var(--border-radius);
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}

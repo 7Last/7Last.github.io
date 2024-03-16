@@ -11,6 +11,11 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import {SvgIconProps} from '@mui/material/SvgIcon';
 import {TreeView} from '@mui/x-tree-view/TreeView';
 import {TreeItem, TreeItemProps, treeItemClasses} from '@mui/x-tree-view/TreeItem';
+import {Stack} from '@mui/material';
+import './App.css';
+
+const repoBaseUrl = 'https://github.com/7Last/docs';
+const repoBlobMain = `${repoBaseUrl}/blob/main`;
 
 declare module 'react' {
     interface CSSProperties {
@@ -26,7 +31,7 @@ type StyledTreeItemProps = TreeItemProps & {
     colorForDarkMode?: string;
     labelIcon: React.ElementType<SvgIconProps>;
     labelInfo?: string;
-    labelText: string;
+    label: React.ReactElement;
     iconColor?: string;
 };
 
@@ -34,8 +39,7 @@ const StyledTreeItemRoot = styled(TreeItem)(({theme}) => ({
     color: theme.palette.text.secondary,
     [`& .${treeItemClasses.content}`]: {
         color: theme.palette.text.secondary,
-        borderTopRightRadius: theme.spacing(2),
-        borderBottomRightRadius: theme.spacing(2),
+        borderRadius: theme.spacing(2),
         paddingRight: theme.spacing(1),
         fontWeight: theme.typography.fontWeightMedium,
         '&.Mui-expanded': {
@@ -57,6 +61,7 @@ const StyledTreeItemRoot = styled(TreeItem)(({theme}) => ({
         marginLeft: 0,
         [`& .${treeItemClasses.content}`]: {
             paddingLeft: theme.spacing(2),
+            paddingRight: theme.spacing(1),
         },
     },
 })) as unknown as typeof TreeItem;
@@ -72,7 +77,7 @@ const StyledTreeItem = React.forwardRef(function StyledTreeItem(
         iconColor,
         labelIcon: LabelIcon,
         labelInfo,
-        labelText,
+        label,
         colorForDarkMode,
         bgColorForDarkMode,
         ...other
@@ -88,10 +93,10 @@ const StyledTreeItem = React.forwardRef(function StyledTreeItem(
         <StyledTreeItemRoot
             label={
                 <Box sx={{display: 'flex', alignItems: 'center', p: 0.5, pr: 0}}>
-                    <Box component={LabelIcon} color={iconColor} sx={{mr: 1}}/>
-                    <Typography variant="body2" sx={{fontWeight: 'inherit', flexGrow: 1}}>
-                        {labelText}
-                    </Typography>
+                    <Box component={LabelIcon} color={iconColor} sx={{mr: 1, ml: 2}}/>
+                    {label}
+                    {/*<Typography variant="body2" sx={{fontWeight: 'inherit', flexGrow: 1}}>*/}
+                    {/*</Typography>*/}
                     <Typography variant="caption" color="inherit">
                         {labelInfo}
                     </Typography>
@@ -111,39 +116,52 @@ export default function FileTreeView() {
     let root = parseNodes(json);
 
     return (
-        <TreeView
-            aria-label="file system navigator"
-            defaultCollapseIcon={<ExpandMoreIcon/>}
-            defaultExpandIcon={<ChevronRightIcon/>}
-            defaultExpanded={[rootKey]}
-            // sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
-        >
-            {
-                // recursive function that takes a node and returns a tree item
-                function renderTree(node: any) {
-                    if ('children' in node) {
-                        return (
-                            <StyledTreeItem key={node.name}
-                                            nodeId={node.name}
-                                            labelText={node.name}
-                                            labelIcon={FolderIcon}
-                                            iconColor={'#eda41e'}
-                            >
-                                {node.children.map(renderTree)}
-                            </StyledTreeItem>
-                        );
-                    } else {
-                        return (
-                            <StyledTreeItem key={node.name}
-                                            nodeId={node.name}
-                                            labelText={node.name}
-                                            labelIcon={DescriptionIcon}
-                            />
-                        );
-                    }
-                }(root)
-            }
-        </TreeView>
-    );
+        <Stack className={'container'}>
+            <Typography variant={"h4"} className={'title'}>
+                Documentazione gruppo 7Last
+            </Typography>
+            <TreeView
+                aria-label="file system navigator"
+                defaultCollapseIcon={<ExpandMoreIcon/>}
+                defaultExpandIcon={<ChevronRightIcon/>}
+                defaultExpanded={[rootKey]}
+                // sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
+            >
+                {
+                    // recursive function that takes a node and returns a tree item
+                    function renderTree(node: any) {
+                        if ('children' in node) {
+                            return (
+                                <StyledTreeItem key={node.name}
+                                                nodeId={node.name}
+                                                labelIcon={FolderIcon}
+                                                label={
+                                                    <Typography variant="body2"
+                                                                sx={{fontWeight: 'inherit', flexGrow: 1}}>
+                                                        {node.name}
+                                                    </Typography>}
+                                                iconColor={'#eda41e'}>
+                                    {node.children
+                                        .sort((a: any, b: any) => a.name.localeCompare(b.name))
+                                        .map(renderTree)}
+                                </StyledTreeItem>
+                            );
+                        } else {
+                            return (
+                                <StyledTreeItem key={node.name}
+                                                nodeId={node.name}
+                                                label={<a href={`${repoBlobMain}/${node.name}`}>
+                                                    {node.name + ' - ' + node.size}
+                                                </a>}
+                                                labelIcon={DescriptionIcon}
+                                />
+                            );
+                        }
+                    }(root)
+                }
+            </TreeView>
+        </Stack>
+    )
+        ;
 }
 // export default App;
