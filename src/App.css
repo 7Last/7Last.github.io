@@ -3,14 +3,14 @@
     --border-radius: 1em;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     background-color: var(--background-color);
     padding: 1em;
     margin: 1em;
     border-radius: var(--border-radius);
-}
-
-.title {
-    text-align: center;
-    font-weight: bold;
 }

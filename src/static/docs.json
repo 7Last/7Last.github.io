@@ -1,7 +1,7 @@
 {
   "type": "directory",
   "name": "docs",
-  "size": "42K",
+  "size": "937K",
   "contents": [
     {
       "type": "file",
@@ -9,31 +9,21 @@
       "size": "34K"
     },
     {
-      "type": "file",
-      "name": "README.md",
-      "size": "6"
-    },
-    {
       "type": "directory",
-      "name": "test_folder",
-      "size": "4.0K",
+      "name": "logo",
+      "size": "898K",
       "contents": [
         {
           "type": "file",
-          "name": "a",
-          "size": "0"
-        },
-        {
-          "type": "file",
-          "name": "b",
-          "size": "0"
-        },
-        {
-          "type": "file",
-          "name": "test",
-          "size": "0"
+          "name": "logo.png",
+          "size": "894K"
         }
       ]
+    },
+    {
+      "type": "file",
+      "name": "README.md",
+      "size": "616"
     }
   ]
 }

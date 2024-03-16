@@ -1,17 +1,15 @@
 import * as React from 'react';
 import {styled, useTheme} from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import {AppBar, Toolbar, IconButton, Container, Avatar, Box, Typography, SvgIconProps} from '@mui/material';
+import {TreeView, TreeItem, TreeItemProps, treeItemClasses} from '@mui/x-tree-view';
 import FolderIcon from '@mui/icons-material/Folder';
 import DescriptionIcon from '@mui/icons-material/Description';
-import docs from "./static/docs.json";
-import {parseNodes} from './parser';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import {SvgIconProps} from '@mui/material/SvgIcon';
-import {TreeView} from '@mui/x-tree-view/TreeView';
-import {TreeItem, TreeItemProps, treeItemClasses} from '@mui/x-tree-view/TreeItem';
-import {Stack} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import ArchitectureIcon from '@mui/icons-material/Architecture';
+import docs from "./static/docs.json";
+import {parseNodes} from './parser';
 import './App.css';
 
 const repoBaseUrl = 'https://github.com/7Last/docs';
@@ -116,52 +114,96 @@ export default function FileTreeView() {
     let root = parseNodes(json);
 
     return (
-        <Stack className={'container'}>
-            <Typography variant={"h4"} className={'title'}>
-                Documentazione gruppo 7Last
-            </Typography>
-            <TreeView
-                aria-label="file system navigator"
-                defaultCollapseIcon={<ExpandMoreIcon/>}
-                defaultExpandIcon={<ChevronRightIcon/>}
-                defaultExpanded={[rootKey]}
-                // sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
-            >
-                {
-                    // recursive function that takes a node and returns a tree item
-                    function renderTree(node: any) {
-                        if ('children' in node) {
-                            return (
-                                <StyledTreeItem key={node.name}
-                                                nodeId={node.name}
-                                                labelIcon={FolderIcon}
-                                                label={
-                                                    <Typography variant="body2"
-                                                                sx={{fontWeight: 'inherit', flexGrow: 1}}>
-                                                        {node.name}
-                                                    </Typography>}
-                                                iconColor={'#eda41e'}>
-                                    {node.children
-                                        .sort((a: any, b: any) => a.name.localeCompare(b.name))
-                                        .map(renderTree)}
-                                </StyledTreeItem>
-                            );
-                        } else {
-                            return (
-                                <StyledTreeItem key={node.name}
-                                                nodeId={node.name}
-                                                label={<a href={`${repoBlobMain}/${node.name}`}>
-                                                    {node.name + ' - ' + node.size}
-                                                </a>}
-                                                labelIcon={DescriptionIcon}
-                                />
-                            );
-                        }
-                    }(root)
-                }
-            </TreeView>
-        </Stack>
-    )
-        ;
+        <>
+            <AppBar position="static">
+                <Container maxWidth="xl">
+                    <Toolbar disableGutters>
+                        <ArchitectureIcon sx={{display: {xs: 'none', md: 'flex'}, mr: 1}}/>
+                        <Typography
+                            variant="h6"
+                            noWrap
+                            component="a"
+                            sx={{
+                                mr: 2,
+                                display: {xs: 'none', md: 'flex'},
+                                fontFamily: 'monospace',
+                                fontWeight: 700,
+                                letterSpacing: '.3rem',
+                                color: 'inherit',
+                                textDecoration: 'none',
+                            }}
+                        >
+                            Documentazione 7Last
+                        </Typography>
+
+                        <ArchitectureIcon sx={{display: {xs: 'flex', md: 'none'}, mr: 1}}/>
+                        <Typography
+                            variant="h5"
+                            noWrap
+                            component="a"
+                            sx={{
+                                mr: 2,
+                                display: {xs: 'flex', md: 'none'},
+                                flexGrow: 1,
+                                fontFamily: 'monospace',
+                                fontWeight: 700,
+                                letterSpacing: '.3rem',
+                                color: 'inherit',
+                                textDecoration: 'none',
+                            }}
+                        >
+                            7Last
+                        </Typography>
+                        <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}></Box>
+
+                        <Avatar alt="7Last" src={require('./static/logo.png')}/>
+                    </Toolbar>
+                </Container>
+            </AppBar>
+
+            <Box className='container'>
+                <TreeView
+                    aria-label="file system navigator"
+                    defaultCollapseIcon={<ExpandMoreIcon/>}
+                    defaultExpandIcon={<ChevronRightIcon/>}
+                    defaultExpanded={[rootKey]}
+                    // sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
+                >
+                    {
+                        // recursive function that takes a node and returns a tree item
+                        function renderTree(node: any) {
+                            if ('children' in node) {
+                                return (
+                                    <StyledTreeItem key={node.name}
+                                                    nodeId={node.name}
+                                                    labelIcon={FolderIcon}
+                                                    label={
+                                                        <Typography variant="body2"
+                                                                    sx={{fontWeight: 'inherit', flexGrow: 1}}>
+                                                            {node.name}
+                                                        </Typography>}
+                                                    iconColor={'#eda41e'}>
+                                        {node.children
+                                            .sort((a: any, b: any) => a.name.localeCompare(b.name))
+                                            .map(renderTree)}
+                                    </StyledTreeItem>
+                                );
+                            } else {
+                                return (
+                                    <StyledTreeItem key={node.name}
+                                                    nodeId={node.name}
+                                                    label={<a href={`${repoBlobMain}/${node.name}`}>
+                                                        {node.name + ' - ' + node.size}
+                                                    </a>}
+                                                    labelIcon={DescriptionIcon}
+                                    />
+                                );
+                            }
+                        }(root)
+                    }
+                </TreeView>
+            </Box>
+        </>
+    );
 }
 // export default App;
