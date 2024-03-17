@@ -1,5 +1,41 @@
 {
   "type": "directory",
   "name": "docs",
-  "size": "4.0K"
+  "size": "941K",
+  "contents": [
+    {
+      "type": "file",
+      "name": "LICENSE",
+      "size": "34K"
+    },
+    {
+      "type": "file",
+      "name": "README.md",
+      "size": "616"
+    },
+    {
+      "type": "directory",
+      "name": "logo",
+      "size": "898K",
+      "contents": [
+        {
+          "type": "file",
+          "name": "logo.png",
+          "size": "894K"
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "test4",
+      "size": "4.0K",
+      "contents": [
+        {
+          "type": "file",
+          "name": "test.txt",
+          "size": "0"
+        }
+      ]
+    }
+  ]
 }
