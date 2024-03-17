@@ -1,0 +1,2 @@
+:root{--background-color:#e9f2ff;--primary-color:#1976d2;--border-radius:1em}body{margin:0;padding:0}.container{background-color:#e9f2ff;background-color:var(--background-color);border-radius:1em;border-radius:var(--border-radius);margin:1em;padding:1em}footer{background-color:#1976d2;background-color:var(--primary-color);bottom:0;padding:1em;position:fixed;text-align:center;width:100%}footer,footer a{color:#fff}
+/*# sourceMappingURL=main.2c496709.css.map*/
