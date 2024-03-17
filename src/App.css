@@ -1,5 +1,6 @@
 :root {
     --background-color: #e9f2ff;
+    --primary-color: #1976d2;
     --border-radius: 1em;
 }
 
@@ -13,4 +14,18 @@ body {
     padding: 1em;
     margin: 1em;
     border-radius: var(--border-radius);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+footer a {
+    color: white;
 }

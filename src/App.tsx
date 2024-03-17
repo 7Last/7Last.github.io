@@ -13,6 +13,7 @@ import './App.css';
 
 const repoBaseUrl = 'https://github.com/7Last/docs';
 const repoBlobMain = `${repoBaseUrl}/blob/main`;
+const groupEmail = '7last.swe@gmail.com';
 
 declare module 'react' {
     interface CSSProperties {
@@ -210,6 +211,13 @@ export default function FileTreeView() {
                     }
                 </TreeView>
             </Box>
+            <footer>
+                <Typography align="center" sx={{
+                    fontFamily: 'monospace'
+                }}>
+                    <a href={`mailto:${groupEmail}`}>{groupEmail}</a>
+                </Typography>
+            </footer>
         </>
     );
 }
