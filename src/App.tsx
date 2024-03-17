@@ -1,13 +1,12 @@
 import * as React from 'react';
 import {styled, useTheme} from '@mui/material/styles';
-import {AppBar, Toolbar, IconButton, Container, Avatar, Box, Typography, SvgIconProps} from '@mui/material';
+import {AppBar, Toolbar, IconButton, Container, Avatar, Box, Typography, SvgIconProps, Tooltip} from '@mui/material';
 import {TreeView, TreeItem, TreeItemProps, treeItemClasses} from '@mui/x-tree-view';
 import FolderIcon from '@mui/icons-material/Folder';
 import DescriptionIcon from '@mui/icons-material/Description';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import MenuIcon from '@mui/icons-material/Menu';
-import ArchitectureIcon from '@mui/icons-material/Architecture';
+import GithubIcon from '@mui/icons-material/GitHub';
 import docs from "./static/docs.json";
 import {parseNodes} from './parser';
 import './App.css';
@@ -118,7 +117,7 @@ export default function FileTreeView() {
             <AppBar position="static">
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <ArchitectureIcon sx={{display: {xs: 'none', md: 'flex'}, mr: 1}}/>
+                        <Avatar alt="7Last" src={require('./static/logo.png')} sx={{mr: 1}}/>
                         <Typography
                             variant="h6"
                             noWrap
@@ -136,7 +135,6 @@ export default function FileTreeView() {
                             Documentazione 7Last
                         </Typography>
 
-                        <ArchitectureIcon sx={{display: {xs: 'flex', md: 'none'}, mr: 1}}/>
                         <Typography
                             variant="h5"
                             noWrap
@@ -155,8 +153,17 @@ export default function FileTreeView() {
                             7Last
                         </Typography>
                         <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}></Box>
-
-                        <Avatar alt="7Last" src={require('./static/logo.png')}/>
+                        <Tooltip title={'View github repository'}>
+                            <IconButton
+                                href={repoBaseUrl}
+                                style={{
+                                    backgroundColor: 'white',
+                                    borderRadius: '0.5em',
+                                    color: 'black',
+                                }}>
+                                <GithubIcon/>
+                            </IconButton>
+                        </Tooltip>
                     </Toolbar>
                 </Container>
             </AppBar>
