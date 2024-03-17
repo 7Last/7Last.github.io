@@ -8,11 +8,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import GithubIcon from '@mui/icons-material/GitHub';
 import docs from "./static/docs.json";
-import {parseNodes} from './parser';
+import {parseNodes, repoBlobMain, repoBaseUrl} from './parser';
 import './App.css';
 
-const repoBaseUrl = 'https://github.com/7Last/docs';
-const repoBlobMain = `${repoBaseUrl}/blob/main`;
 const groupEmail = '7last.swe@gmail.com';
 
 declare module 'react' {
@@ -192,7 +190,7 @@ export default function FileTreeView() {
                                                         </Typography>}
                                                     iconColor={'#eda41e'}>
                                         {node.children
-                                            .sort((a: any, b: any) => a.name.localeCompare(b.name))
+                                            // .sort((a: any, b: any) => a.name.localeCompare(b.name))
                                             .map(renderTree)}
                                     </StyledTreeItem>
                                 );
@@ -200,7 +198,7 @@ export default function FileTreeView() {
                                 return (
                                     <StyledTreeItem key={node.name}
                                                     nodeId={node.name}
-                                                    label={<a href={`${repoBlobMain}/${node.name}`}>
+                                                    label={<a href={node.url} target="_blank" rel="noreferrer">
                                                         {node.name + ' - ' + node.size}
                                                     </a>}
                                                     labelIcon={DescriptionIcon}

@@ -5,34 +5,34 @@
   "contents": [
     {
       "type": "file",
-      "name": "LICENSE",
+      "name": "docs/LICENSE",
       "size": "34K"
     },
     {
-      "type": "file",
-      "name": "README.md",
-      "size": "616"
-    },
-    {
       "type": "directory",
-      "name": "logo",
+      "name": "docs/logo",
       "size": "898K",
       "contents": [
         {
           "type": "file",
-          "name": "logo.png",
+          "name": "docs/logo/logo.png",
           "size": "894K"
         }
       ]
     },
     {
+      "type": "file",
+      "name": "docs/README.md",
+      "size": "616"
+    },
+    {
       "type": "directory",
-      "name": "test5",
+      "name": "docs/test5",
       "size": "4.0K",
       "contents": [
         {
           "type": "file",
-          "name": "test5.txt",
+          "name": "docs/test5/test5.txt",
           "size": "0"
         }
       ]
