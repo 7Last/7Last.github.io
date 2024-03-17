@@ -1,7 +1,7 @@
 {
   "type": "directory",
   "name": "docs",
-  "size": "937K",
+  "size": "941K",
   "contents": [
     {
       "type": "file",
@@ -24,6 +24,18 @@
       "type": "file",
       "name": "README.md",
       "size": "616"
+    },
+    {
+      "type": "directory",
+      "name": "test1",
+      "size": "4.0K",
+      "contents": [
+        {
+          "type": "file",
+          "name": "test.txt",
+          "size": "0"
+        }
+      ]
     }
   ]
 }
