@@ -9,7 +9,7 @@ list_content_to_json() {
     output_json="$2"
 
     # List content of submodule recursively
-    content=$(tree -J "$submodule_path" | jq '.[0]')
+    content=$(tree --du -h -J "$submodule_path" | jq '.[0]')
     # create json object with key content
     echo "$content" > "$output_json"
 }
