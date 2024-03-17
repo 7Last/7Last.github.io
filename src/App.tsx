@@ -8,7 +8,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import GithubIcon from '@mui/icons-material/GitHub';
 import docs from "./static/docs.json";
-import {parseNodes, repoBlobMain, repoBaseUrl} from './parser';
+import {parseNodes, repoBaseUrl} from './parser';
 import './App.css';
 
 const groupEmail = '7last.swe@gmail.com';
