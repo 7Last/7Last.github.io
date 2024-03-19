@@ -190,7 +190,7 @@ export default function FileTreeView() {
                                                         </Typography>}
                                                     iconColor={'#eda41e'}>
                                         {node.children
-                                            // .sort((a: any, b: any) => a.name.localeCompare(b.name))
+                                            .sort((a: any, b: any) => a.name.localeCompare(b.name))
                                             .map(renderTree)}
                                     </StyledTreeItem>
                                 );
