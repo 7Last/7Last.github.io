@@ -9,6 +9,11 @@
       "size": "34K"
     },
     {
+      "type": "file",
+      "name": "docs/README.md",
+      "size": "623"
+    },
+    {
       "type": "directory",
       "name": "docs/logo",
       "size": "898K",
@@ -19,11 +24,6 @@
           "size": "894K"
         }
       ]
-    },
-    {
-      "type": "file",
-      "name": "docs/README.md",
-      "size": "623"
     }
   ]
 }
