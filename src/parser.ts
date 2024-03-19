@@ -1,5 +1,5 @@
 const repoBaseUrl = 'https://github.com/7Last/docs';
-const repoBlobMain = `${repoBaseUrl}/blob/main`;
+const rawContentUrl = `https://raw.githubusercontent.com/7Last/docs/main`;
 
 interface Directory {
     name: string;
@@ -29,11 +29,11 @@ function parseNodes(json: any): Node {
         return {
             name: lastSegmentName,
             size: numbersOnly.test(json.size) ? `${json.size}B` : json.size,
-            url: repoBlobMain + '/' + json.name.replace('docs/', '')
+            url: rawContentUrl + '/' + json.name.replace('docs/', '')
         };
     }
 }
 
 export type Node = Directory | File;
 export {parseNodes};
-export {repoBaseUrl, repoBlobMain};
+export {repoBaseUrl, rawContentUrl};
