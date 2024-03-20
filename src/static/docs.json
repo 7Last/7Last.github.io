@@ -1,8 +1,101 @@
 {
   "type": "directory",
   "name": "docs",
-  "size": "937K",
+  "size": "1.6M",
   "contents": [
+    {
+      "type": "directory",
+      "name": "docs/0_template",
+      "size": "224K",
+      "contents": [
+        {
+          "type": "file",
+          "name": "docs/0_template/header.tex",
+          "size": "231"
+        },
+        {
+          "type": "file",
+          "name": "docs/0_template/main.pdf",
+          "size": "217K"
+        },
+        {
+          "type": "file",
+          "name": "docs/0_template/main.tex",
+          "size": "1.1K"
+        },
+        {
+          "type": "file",
+          "name": "docs/0_template/packages.tex",
+          "size": "497"
+        },
+        {
+          "type": "file",
+          "name": "docs/0_template/title.tex",
+          "size": "508"
+        },
+        {
+          "type": "file",
+          "name": "docs/0_template/variables.tex",
+          "size": "231"
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "docs/1_candidatura",
+      "size": "430K",
+      "contents": [
+        {
+          "type": "directory",
+          "name": "docs/1_candidatura/valutazione_capitolati_v1.0",
+          "size": "426K",
+          "contents": [
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/header.tex",
+              "size": "208"
+            },
+            {
+              "type": "directory",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/images",
+              "size": "135K",
+              "contents": [
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/valutazione_capitolati_v1.0/images/logo.jpg",
+                  "size": "131K"
+                }
+              ]
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/packages.tex",
+              "size": "517"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/title.tex",
+              "size": "644"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/valutazione_capitolati_v1.0.pdf",
+              "size": "274K"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/valutazione_capitolati_v1.0.tex",
+              "size": "12K"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/variables.tex",
+              "size": "179"
+            }
+          ]
+        }
+      ]
+    },
     {
       "type": "file",
       "name": "docs/LICENSE",
