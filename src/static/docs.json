@@ -1,8 +1,32 @@
 {
   "type": "directory",
   "name": "docs",
-  "size": "937K",
+  "size": "1.2M",
   "contents": [
+    {
+      "type": "directory",
+      "name": "docs/1_candidatura",
+      "size": "282K",
+      "contents": [
+        {
+          "type": "directory",
+          "name": "docs/1_candidatura/preventivo_costi_v1.0",
+          "size": "278K",
+          "contents": [
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/preventivo_costi_v1.0/preventivo_costi_assunzione_impegni_v1.0.pdf",
+              "size": "264K"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/preventivo_costi_v1.0/preventivo_costi_assunzione_impegni_v1.0.tex",
+              "size": "9.8K"
+            }
+          ]
+        }
+      ]
+    },
     {
       "type": "file",
       "name": "docs/LICENSE",
