@@ -1,7 +1,7 @@
 {
   "type": "directory",
   "name": "docs",
-  "size": "1.2M",
+  "size": "937K",
   "contents": [
     {
       "type": "file",
@@ -24,11 +24,6 @@
           "size": "894K"
         }
       ]
-    },
-    {
-      "type": "file",
-      "name": "docs/valutazione_capitolati_v1.0.pdf",
-      "size": "274K"
     }
   ]
 }
