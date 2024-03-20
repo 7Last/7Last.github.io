@@ -1,17 +1,371 @@
 {
   "type": "directory",
   "name": "docs",
-  "size": "1.2M",
+  "size": "8.5M",
   "contents": [
     {
       "type": "directory",
       "name": "docs/1_candidatura",
-      "size": "278K",
+      "size": "7.6M",
       "contents": [
+        {
+          "type": "directory",
+          "name": "docs/1_candidatura/lettera_di_presentazione",
+          "size": "1021K",
+          "contents": [
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/lettera_di_presentazione/header.tex",
+              "size": "225"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/lettera_di_presentazione/lettera_di_presentazione.pdf",
+              "size": "1014K"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/lettera_di_presentazione/lettera_di_presentazione.tex",
+              "size": "2.2K"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/lettera_di_presentazione/packages.tex",
+              "size": "614"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/lettera_di_presentazione/title.tex",
+              "size": "701"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/lettera_di_presentazione/variables.tex",
+              "size": "197"
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "docs/1_candidatura/preventivo_costi_v1.0",
+          "size": "414K",
+          "contents": [
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/preventivo_costi_v1.0/header.tex",
+              "size": "208"
+            },
+            {
+              "type": "directory",
+              "name": "docs/1_candidatura/preventivo_costi_v1.0/images",
+              "size": "135K",
+              "contents": [
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/preventivo_costi_v1.0/images/logo.jpg",
+                  "size": "131K"
+                }
+              ]
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/preventivo_costi_v1.0/packages.tex",
+              "size": "517"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/preventivo_costi_v1.0/preventivo_costi_assunzione_impegni_v1.0.pdf",
+              "size": "264K"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/preventivo_costi_v1.0/preventivo_costi_assunzione_impegni_v1.0.tex",
+              "size": "9.7K"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/preventivo_costi_v1.0/title.tex",
+              "size": "664"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/preventivo_costi_v1.0/variables.tex",
+              "size": "198"
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "docs/1_candidatura/valutazione_capitolati_v1.0",
+          "size": "17K",
+          "contents": [
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/header.tex",
+              "size": "210"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/packages.tex",
+              "size": "597"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/title.tex",
+              "size": "758"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/valutazione_capitolati_v1.0.tex",
+              "size": "12K"
+            },
+            {
+              "type": "file",
+              "name": "docs/1_candidatura/valutazione_capitolati_v1.0/variables.tex",
+              "size": "175"
+            }
+          ]
+        },
         {
           "type": "file",
           "name": "docs/1_candidatura/valutazione_capitolati_v1.0.pdf",
           "size": "274K"
+        },
+        {
+          "type": "directory",
+          "name": "docs/1_candidatura/verbali_esterni",
+          "size": "2.9M",
+          "contents": [
+            {
+              "type": "directory",
+              "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_synclab",
+              "size": "1001K",
+              "contents": [
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_synclab/header.tex",
+                  "size": "208"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_synclab/packages.tex",
+                  "size": "522"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_synclab/title.tex",
+                  "size": "661"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_synclab/variables.tex",
+                  "size": "207"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_synclab/verbale_esterno_24_03_08_v1.0_synclab.pdf",
+                  "size": "991K"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_synclab/verbale_esterno_24_03_08_v1.0_synclab.tex",
+                  "size": "4.0K"
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_zucchetti",
+              "size": "1000K",
+              "contents": [
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_zucchetti/header.tex",
+                  "size": "208"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_zucchetti/packages.tex",
+                  "size": "522"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_zucchetti/title.tex",
+                  "size": "661"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_zucchetti/variables.tex",
+                  "size": "208"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_zucchetti/verbale_esterno_zucchetti_24_03_08_v1.0.pdf",
+                  "size": "991K"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_08_v1.0_zucchetti/verbale_esterno_zucchetti_24_03_08_v1.0.tex",
+                  "size": "3.6K"
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_15_v1.0_imola_informatica",
+              "size": "1000K",
+              "contents": [
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_15_v1.0_imola_informatica/header.tex",
+                  "size": "208"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_15_v1.0_imola_informatica/packages.tex",
+                  "size": "522"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_15_v1.0_imola_informatica/title.tex",
+                  "size": "661"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_15_v1.0_imola_informatica/variables.tex",
+                  "size": "216"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_15_v1.0_imola_informatica/verbale_esterno_24_03_15_v1.0_imola_informatica.pdf",
+                  "size": "991K"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_esterni/verbale_esterno_24_03_15_v1.0_imola_informatica/verbale_esterno_24_03_15_v1.0_imola_informatica.tex",
+                  "size": "3.9K"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "docs/1_candidatura/verbali_interni",
+          "size": "3.0M",
+          "contents": [
+            {
+              "type": "directory",
+              "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_05_v1.0",
+              "size": "1019K",
+              "contents": [
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_05_v1.0/header.tex",
+                  "size": "208"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_05_v1.0/packages.tex",
+                  "size": "522"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_05_v1.0/title.tex",
+                  "size": "661"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_05_v1.0/variables.tex",
+                  "size": "198"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_05_v1.0/verbale_interno_24_03_05_v1.0.pdf",
+                  "size": "1010K"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_05_v1.0/verbale_interno_24_03_05_v1.0.tex",
+                  "size": "3.7K"
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_15_v1.0",
+              "size": "1.0M",
+              "contents": [
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_15_v1.0/header.tex",
+                  "size": "208"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_15_v1.0/packages.tex",
+                  "size": "522"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_15_v1.0/title.tex",
+                  "size": "661"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_15_v1.0/variables.tex",
+                  "size": "192"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_15_v1.0/verbale_interno24_03_15_v1.0.pdf",
+                  "size": "1017K"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_15_v1.0/verbale_interno24_03_15_v1.0.tex",
+                  "size": "4.3K"
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_18_v1.0",
+              "size": "1019K",
+              "contents": [
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_18_v1.0/header.tex",
+                  "size": "208"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_18_v1.0/packages.tex",
+                  "size": "522"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_18_v1.0/title.tex",
+                  "size": "661"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_18_v1.0/variables.tex",
+                  "size": "199"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_18_v1.0/verbale_interno24_03_18_v0.1.pdf",
+                  "size": "1010K"
+                },
+                {
+                  "type": "file",
+                  "name": "docs/1_candidatura/verbali_interni/verbale_interno_24_03_18_v1.0/verbale_interno24_03_18_v0.1.tex",
+                  "size": "2.8K"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
