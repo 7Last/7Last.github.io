@@ -1,45 +1,8 @@
 {
   "type": "directory",
   "name": "docs",
-  "size": "8.9M",
+  "size": "8.7M",
   "contents": [
-    {
-      "type": "directory",
-      "name": "docs/0_template",
-      "size": "224K",
-      "contents": [
-        {
-          "type": "file",
-          "name": "docs/0_template/header.tex",
-          "size": "231"
-        },
-        {
-          "type": "file",
-          "name": "docs/0_template/main.pdf",
-          "size": "217K"
-        },
-        {
-          "type": "file",
-          "name": "docs/0_template/main.tex",
-          "size": "1.1K"
-        },
-        {
-          "type": "file",
-          "name": "docs/0_template/packages.tex",
-          "size": "497"
-        },
-        {
-          "type": "file",
-          "name": "docs/0_template/title.tex",
-          "size": "508"
-        },
-        {
-          "type": "file",
-          "name": "docs/0_template/variables.tex",
-          "size": "231"
-        }
-      ]
-    },
     {
       "type": "directory",
       "name": "docs/1_candidatura",
