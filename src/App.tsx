@@ -36,7 +36,7 @@ const StyledTreeItemRoot = styled(TreeItem)(({theme}) => ({
     [`& .${treeItemClasses.content}`]: {
         color: theme.palette.text.secondary,
         borderRadius: theme.spacing(2),
-        paddingRight: theme.spacing(1),
+        paddingLeft: theme.spacing(1),
         fontWeight: theme.typography.fontWeightMedium,
         '&.Mui-expanded': {
             fontWeight: theme.typography.fontWeightRegular,
@@ -54,7 +54,7 @@ const StyledTreeItemRoot = styled(TreeItem)(({theme}) => ({
         },
     },
     [`& .${treeItemClasses.group}`]: {
-        marginLeft: 0,
+        marginLeft: theme.spacing(3),
         [`& .${treeItemClasses.content}`]: {
             paddingLeft: theme.spacing(2),
             paddingRight: theme.spacing(1),
