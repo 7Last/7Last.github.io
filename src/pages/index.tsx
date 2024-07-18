@@ -55,10 +55,11 @@ export default function Home(): JSX.Element {
                     <Grid container spacing={3} p={5} m={2} justifyContent={'center'} alignItems={'center'}
                         direction={{ xs: 'column', md: 'row' }}>
                         <Grid item xs={4}>
-                            <Heading as={'h2'}>Proof of Concept</Heading>
+                            <Heading as={'h2'}>Minimum Viable Product</Heading>
                             <p>
-                                Realizzazione di un prototipo di un sistema che simula dati provenienti da sensori IoT,
-                                li pubblica in una coda Redpanda, li salva su Clickhouse DB e li mostra in una dashboard Grafana.
+                                Sviluppo di un sistema innovativo che simula dati dai sensori IoT, li invia a una coda
+                                Redpanda, esegue aggregazioni complesse con Flink, salva i risultati in un database Clickhouse e
+                                li visualizza in una dashboard Grafana.
                             </p>
                         </Grid>
 
